@@ -1,0 +1,25 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+.container{
+   background-color: #FFC0CB;
+}
+
+[class*="col-"]{
+   line-height: 180px;
+   text-align: center;
+   font-weight: bold;
+   border: 1px solid black;
+}
+
+.col-6 > .container{
+   background-color: #F07F80;
+   margin: 5px;
+}
+
+.col-6 > .container [class*="col-"]{
+   border: 1px solid white;
+}
